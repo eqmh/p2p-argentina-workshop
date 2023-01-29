@@ -1,5 +1,5 @@
 ---
-title: "Organizing Committee"
+title: "Instructores"
 ---
 
 ```{r setup, include=FALSE}
@@ -7,27 +7,33 @@ knitr::opts_chunk$set(echo = F, message = F, warning = F)
 ```
 <body>
 
-<h2>
+<h3>
 
-- [Esteban Acevedo-Trejos - GFZ Helmholtz Centre Potsdam](https://www.gfz-potsdam.de/en/staff/esteban-acevedo-trejos/sec47/)
-- [Clarissa Anderson - SCCOOS](https://cra002.scrippsprofiles.ucsd.edu/)
-- [Jason Everett - U. Queensland](https://jaseeverett.github.io/)
-- [Maria Grigoratou - GMRI](https://www.gmri.org/our-approach/staff/maria-grigoratou/)
-- [Chris Lindemann - U. Bergen](https://www.uib.no/en/persons/Christian.Lindemann)
-- [Enrique Montes - NOAA AOML](https://www.aoml.noaa.gov/oced-staff/)
-- [Frank Muller- Karger - U. South Florida](https://www.usf.edu/marine-science/faculty/faculty-directory/biological-oceanography/frank-muller-karger.aspx)
-- [Artur Palacz - IOCCP](https://www.researchgate.net/profile/Artur-Palacz)
-- [Fi Prowe - GEOMAR](https://www.geomar.de/fprowe)
-- [Renato Quinones - INACR](https://centroincar.cl/en/2020/06/24/dr-renato-quinones-bergeret/)
-- [Anthony Richardson - U. Queensland & CSIRO](https://mathmarecol.github.io/)
-- [Jeffrey Runge - U. Maine](https://umaine.edu/marine/people/jeffrey-runge/)
-- [Selina Vage - U. Bergen](https://www.uib.no/en/persons/Selina.V%C3%A5ge)
-- [Meike Vogt - ETH Zürich](https://uppeople.ethz.ch/MeikeVogt/)
-- [Soultana Zervoudaki - Hellenic Center for Marine Research](https://orcid.org/0000-0002-3499-8433)
+<img src="images/GBigatti.JPG" width="500px"/>
 
-<h2>
+BIO AQUI
+
+<br>
+<img src="images/GBravo.JPEG" width="500px"/>
+
+BIO AQUI
+
+<br>
+
+<img src="images/EMontes.JPG" width="500px"/>
+
+Enrique Montes es oceanógrafo biológico del Instituto Cooperativo de Estudios Marinos y Atmosféricos ([CIMAS](https://cimas.earth.miami.edu/)) de la Universidad de Miami, y  el Laboratorio Oceanográfico y Meteorológico del Atlántico ([AOML](https://www.aoml.noaa.gov/)) de la NOAA. Su investigación explora las respuestas de la vida marina a cambios en las condiciones atmosféricas y oceanográficas integrando mediciones medioambientales, bioópticas, genómicas y taxonómicas *in situ* con datos  satelitales para entender el contexto oceanográfico de observaciones locales y caracterizar la biogeografía regional.  Es Co-investigador de la Red de Observación de la Biodiversidad Marina ([MBON](https://marinebon.org/])) en Estados Unidos y a escala internacional, y el Investigador Principal de la Red MBON Polo a Polo de las Américas ([MBON Pole to Pole](https://marinebon.github.io/p2p/index.html)). Enrique preside la Asociación Internacional de Oceanografía Biológica ((IABO)[http://iabo.org/]) y es miembro del Comité Ejecutivo del Comité Científico de Investigaciones Oceánicas ([SCOR]([https://scor-int.org/)).
+
+<br>
+
+<img src="images/EKlein.JPEG" width="500px"/>
+
+BIO AQUI
+
+</br>
+
+</h3>
 
 </body>
 
-<br>
 
