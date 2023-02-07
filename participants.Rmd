@@ -9,7 +9,7 @@ library(readxl)
 library(knitr)
 ```
 
-<img src="images/muestreo.PNG" width="500px"/>
+<img src="images/muestreo.JPG" width="500px"/>
 
 <body>
 
