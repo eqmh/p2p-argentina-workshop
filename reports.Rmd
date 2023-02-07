@@ -1,5 +1,5 @@
 ---
-title: "Workshop Reports"
+title: "Materiales del Taller"
 ---
 
 ```{r setup, include=FALSE}
@@ -10,13 +10,8 @@ knitr::opts_chunk$set(echo = F, message = F, warning = F)
 
 <h1>
 
-An overview of all workshops has been submitted as *Meeting Highlights* in the *Limnology & Oceanography Bulletin*.
-<br>
-<br>
-The report for the first MODIV-MBON workshop is available [here](MBON_MODIV_workshop_report.pdf)
+**En construcción**
 
-<img src="images/workshop_report.PNG" width="1000px"/>
-
-<h1>
+</h1>
 
 </body>

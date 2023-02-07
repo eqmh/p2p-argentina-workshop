@@ -1,5 +1,5 @@
 ---
-title: "Workshop Program"
+title: "Agenda y Logística del Taller"
 editor_options: 
   markdown: 
     wrap: sentence
@@ -9,93 +9,69 @@ editor_options:
 knitr::opts_chunk$set(echo = F, message = F, warning = F)
 ```
 
+<img src="images/BBustamante.PNG" width="500px"/>
+
 <body>
 
 <h2>
 
-## **DAY 1 -- Monday November 9, 2020 (Europe, USA)**
+## **DIA 1 -- Lunes 27 de marzo: Camarones**
 
-Chair: Artur Palacz // Note taker: Selina Vage
+-   Teoría sobre biodiversidad de ambientes intermareales rocosos de Patagonia
+-   Protocolos de muestreo con inteligencia artificial
+-   Demostración de datos previos y plataforma MBON para detectar cambios de biodiversidad <br> <br>
 
--   Bringing communities of practices together to build a global Marine Biodiversity Observation Network (MBON) in service of the global society - Enrique Montes
--   Modeling diverse plankton communities: How is it done and what are we missing? -- Fi Prowe and Chris Lindemann <br> <br>
+## **DIA 2 -- Martes 28 de marzo: Bahía Bustamante** 
 
-## **DAY 2 -- Tuesday November 10, 2020** 
+-   Muestreo intermareal con fotocuadrantes en Parque Nacional sobre Bahía Bustamante (Estancia Soriano)
+-   Uso de cámaras y equipos para muestreo de biodiversidad intermareal 
+-   Optimización de fotografías para utilizar inteligencia artificial, uso de software de imágenes 
+-   Utilización de software de inteligencia artificial para análisis de biodiversidad marina <br> <br>
 
-Chair: Frank Muller- Karger // Note taker: Enrique Montes
+## **DIA 3 -- Miércoles 29 de marzo: Camarones** 
 
--   Breakout session 1 -- Databases: what we have and what we would like
--   Breakout session 2 -- The Value of Plankton Ecosystem Functions <br> <br>
+-   Manejo y análisis de datos
+-   Bases de datos abiertas para registros de biodiversidad [OBIS](obis.org)
+-   Análisis de fotografías digitales con inteligencia artificial <br> <br>
 
-## **DAY 1 -- Wednesday October 13, 2021 (Africa, Europe, The Middle East, India)**
+## **DIA 4 -- Jueves 30- de marzo: Camarones** 
 
-Chair: Maria Grigoratou // Co-chairs & note takers: Bingzhang Chen, Alice Soccodato
+-   Continuación de análisis de fotografías digitales con IA tomadas durante la capacitación
+-   Generación de reporte de indicadores de biodiversidad con [tableros interactivos](https://marinebon.github.io/p2p-dashboard/biodivExplorer_beach.html#general-information) <br> <br>
 
--   From plankton to policy: Connecting ocean observations to decision making - Abigail McQuatters-Gollop
--   Numerical modelling of marine plankton ecosystems- Mechanistic models at the global ocean scale - Sergio Vallina <br> <br>
+## **DIA 5 -- Viernes 31 de marzo: Camarones** 
 
-## **DAY 2 - Thursday October 14, 2021**
+-   Análisis grupal de los datos subidos, comparaciones con otros datos de Argentina
+-   Discusión acerca de aplicación de resultados al manejo de ecosistemas costeros e implementación en Parques Nacionales Marinos
+-   Coordinación de muestreos futuros en las distintas localidades
+-   Entrega formal de equipamiento para muestreo a largo plazo <br> <br>
 
-Chair: Alice Soccodato // Co-chair & note taker: Maria Grigoratou
-
--   Breakout session 1 -- Databases: what we have and what we would like
--   Breakout session 2 -- The Value of Plankton Ecosystem Functions <br> <br>
-
-## **DAY 1 -- Wednesday October 13, 2021 (America)**
-
-Chair: Enrique Montes // Co-chair & note taker: Maria Grigoratou
-
--   Marine observation efforts in the SW Atlantic Ocean - Celeste López-Abbate
--   Data and approaches for lower trophic level diversity on the Canadian northwest Atlantic shelves - Catherine Johnson
--   Modeling diverse plankton communities -- How is it done and what are we missing? - Esteban Acevedo-Trejos <br> <br>
-
-## **DAY 2 - Thursday October 14, 2021**
-
-Chair: Frank Muller- Karger // Co-chair & note taker: Esteban Acevedo- Trejos
-
--   Breakout session 1 -- Databases: what we have and what we would like
--   Breakout session 2 -- The Value of Plankton Ecosystem Functions <br> <br>
-
-## **DAY 1 -- Wednesday, November 3, 2021: Plankton in policy: How can we best use plankton to inform ecosystem assessments?**
-
--   Discussion of the value of plankton (ecological, biogeochemical, economic, recreational) <br> <br>
--   Plankton Essential Ocean Variables (EOVs) and ecosystem assessments - Anthony Richardson, Lavenia Ratnaraj and Ana Lara-Lopez
-
-\- What are ecosystem assessments?
-
-\- Plankton EOVs -- biomass and diversity
-
-\- Case studies that include plankton in ecosystem assessments
-
-\- How might be we best use plankton as EOVs?
-
-\- What are we using plankton indicators for?
-
-\- What examples do we have of using plankton indicators from different parts of the world?
-
-\- How can we move plankton EOVs forward?
-<br> <br>
-
-## **DAY 2 -- Thursday November 4, 2021: Plankton in management: How can we best use plankton in models?**
-
--   What are the main types of plankton data and their limitations? - Jason Everett
--   Plankton in models - Heidi Pethybridge, Jenny Skerratt, Tyler Rohr
--   Approaches to standardising plankton data for use in models - Anthony Richardson:
-
-Use of conversions; Use of statistical models
-
--   Making plankton data more useful for modelling
-
--   What examples do we have of using plankton data in models from different parts of the world?
-
--   How can we improve conversion tables/equations?
-
--   What are the different ways in which we can validate model output using plankton data?
-
--   How can we stimulate plankton uptake in models?
-
-<h2>
+</h2>
 
 </body>
 
-<br>
+```{r}
+library(tidyverse)
+library(leaflet)
+library(sf)
+
+pts <- tribble(
+        ~lon,       ~lat,       ~name,    ~icon,   ~color,          ~description, ~comment,
+  -66.5372371, -45.1261811,  "Bahía Bustamante",  "home",  "green",   "Bahía Bustamante", NA,
+  -65.2831, -43.2099,      "Trelew", "plane", "red", "Aeropuerto Trelew", NA,
+  -65.7103, -44.7985,   "Camarones", "home", "orange", "Camarones", NA) %>%
+  st_as_sf(coords = c("lon", "lat"), crs = 4326)
+ctr <- pts$geometry %>% st_geometrycollection() %>% st_centroid() %>% st_coordinates()
+icons <- awesomeIcons(
+  icon = pts$icon,
+  iconColor = 'black',
+  library = 'fa',
+  markerColor = pts$color)
+leaflet(pts, options = leafletOptions(attributionControl=F)) %>%
+  #addProviderTiles(provider = providers$Stamen.TonerLite) %>%
+  addProviderTiles("Esri.WorldImagery") %>%
+  addAwesomeMarkers(icon = icons, label= ~name, labelOptions = labelOptions(noHide = T)) %>%
+  setView(ctr[,"X"], ctr[,"Y"], zoom=7)
+```
+
+

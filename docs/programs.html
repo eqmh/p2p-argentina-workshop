@@ -11,10 +11,10 @@
 
 
 
-<title>Workshop Program</title>
+<title>Agenda y Logística del Taller</title>
 
-<script src="site_libs/header-attrs-2.10/header-attrs.js"></script>
-<script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
+<script src="site_libs/header-attrs-2.14/header-attrs.js"></script>
+<script src="site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <link href="site_libs/bootstrap-3.3.5/css/cosmo.min.css" rel="stylesheet" />
 <script src="site_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
@@ -32,6 +32,19 @@
 <script src="site_libs/navigation-1.1/tabsets.js"></script>
 <link href="site_libs/highlightjs-9.12.0/textmate.css" rel="stylesheet" />
 <script src="site_libs/highlightjs-9.12.0/highlight.js"></script>
+<script src="site_libs/htmlwidgets-1.5.4/htmlwidgets.js"></script>
+<link href="site_libs/leaflet-1.3.1/leaflet.css" rel="stylesheet" />
+<script src="site_libs/leaflet-1.3.1/leaflet.js"></script>
+<link href="site_libs/leafletfix-1.0.0/leafletfix.css" rel="stylesheet" />
+<script src="site_libs/proj4-2.6.2/proj4.min.js"></script>
+<script src="site_libs/Proj4Leaflet-1.0.1/proj4leaflet.js"></script>
+<link href="site_libs/rstudio_leaflet-1.3.1/rstudio_leaflet.css" rel="stylesheet" />
+<script src="site_libs/leaflet-binding-2.1.1/leaflet.js"></script>
+<script src="site_libs/leaflet-providers-1.9.0/leaflet-providers_1.9.0.js"></script>
+<script src="site_libs/leaflet-providers-plugin-2.1.1/leaflet-providers-plugin.js"></script>
+<link href="site_libs/leaflet-awesomemarkers-2.0.3/leaflet.awesome-markers.css" rel="stylesheet" />
+<script src="site_libs/leaflet-awesomemarkers-2.0.3/leaflet.awesome-markers.min.js"></script>
+<link href="site_libs/fontawesome-4.7.0/font-awesome.min.css" rel="stylesheet" />
 <link href="site_libs/ionicons-2.0.1/css/ionicons.min.css" rel="stylesheet" />
 
 <style type="text/css">
@@ -53,6 +66,7 @@ if (window.hljs) {
   }
 }
 </script>
+
 
 
 
@@ -82,6 +96,9 @@ button.code-folding-btn:focus {
 }
 summary {
   display: list-item;
+}
+details > summary > p:only-child {
+  display: inline;
 }
 pre code {
   padding: 0;
@@ -234,12 +251,12 @@ $(document).ready(function () {
 <div class="navbar navbar-default  navbar-fixed-top" role="navigation">
   <div class="container">
     <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-bs-toggle="collapse" data-target="#navbar" data-bs-target="#navbar">
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="index.html">MBON Plankton</a>
+      <a class="navbar-brand" href="index.html">MBON Pole to Pole</a>
     </div>
     <div id="navbar" class="navbar-collapse collapse">
       <ul class="nav navbar-nav">
@@ -247,42 +264,35 @@ $(document).ready(function () {
   <a href="index.html">
     <span class="ion ion-android-home"></span>
      
-    Home
+    El Taller
   </a>
 </li>
 <li>
   <a href="committee.html">
     <span class="ion ion-ios-people"></span>
      
-    Organizing Committee
+    Comité Organizador
   </a>
 </li>
 <li>
   <a href="participants.html">
     <span class="ion ion-ios-person"></span>
      
-    Workshop Participants
-  </a>
-</li>
-<li>
-  <a href="keynotes.html">
-    <span class="ion ion-ios-person"></span>
-     
-    Keynote Speakers
+    Participantes
   </a>
 </li>
 <li>
   <a href="programs.html">
     <span class="ion ion-hammer"></span>
      
-    Program
+    Programa
   </a>
 </li>
 <li>
   <a href="reports.html">
     <span class="ion ion-hammer"></span>
      
-    Workshop Reports
+    Materiales
   </a>
 </li>
       </ul>
@@ -297,94 +307,73 @@ $(document).ready(function () {
 
 
 
-<h1 class="title toc-ignore">Workshop Program</h1>
+<h1 class="title toc-ignore">Agenda y Logística del Taller</h1>
 
 </div>
 
 
+<p><img src="images/BBustamante.PNG" width="500px"/></p>
 <body>
 <h2>
-<div id="day-1-monday-november-9-2020-europe-usa" class="section level2">
-<h2><strong>DAY 1 – Monday November 9, 2020 (Europe, USA)</strong></h2>
-<p>Chair: Artur Palacz // Note taker: Selina Vage</p>
+<div id="dia-1-lunes-27-de-marzo-camarones" class="section level2">
+<h2><strong>DIA 1 – Lunes 27 de marzo: Camarones</strong></h2>
 <ul>
-<li>Bringing communities of practices together to build a global Marine Biodiversity Observation Network (MBON) in service of the global society - Enrique Montes</li>
-<li>Modeling diverse plankton communities: How is it done and what are we missing? – Fi Prowe and Chris Lindemann <br> <br></li>
+<li>Teoría sobre biodiversidad de ambientes intermareales rocosos de
+Patagonia</li>
+<li>Protocolos de muestreo con inteligencia artificial</li>
+<li>Demostración de datos previos y plataforma MBON para detectar
+cambios de biodiversidad <br> <br></li>
 </ul>
 </div>
-<div id="day-2-tuesday-november-10-2020" class="section level2">
-<h2><strong>DAY 2 – Tuesday November 10, 2020</strong></h2>
-<p>Chair: Frank Muller- Karger // Note taker: Enrique Montes</p>
+<div id="dia-2-martes-28-de-marzo-bahía-bustamante"
+class="section level2">
+<h2><strong>DIA 2 – Martes 28 de marzo: Bahía Bustamante</strong></h2>
 <ul>
-<li>Breakout session 1 – Databases: what we have and what we would like</li>
-<li>Breakout session 2 – The Value of Plankton Ecosystem Functions <br> <br></li>
+<li>Muestreo intermareal con fotocuadrantes en Parque Nacional sobre
+Bahía Bustamante (Estancia Soriano)</li>
+<li>Uso de cámaras y equipos para muestreo de biodiversidad
+intermareal</li>
+<li>Optimización de fotografías para utilizar inteligencia artificial,
+uso de software de imágenes</li>
+<li>Utilización de software de inteligencia artificial para análisis de
+biodiversidad marina <br> <br></li>
 </ul>
 </div>
-<div id="day-1-wednesday-october-13-2021-africa-europe-the-middle-east-india" class="section level2">
-<h2><strong>DAY 1 – Wednesday October 13, 2021 (Africa, Europe, The Middle East, India)</strong></h2>
-<p>Chair: Maria Grigoratou // Co-chairs &amp; note takers: Bingzhang Chen, Alice Soccodato</p>
+<div id="dia-3-miércoles-29-de-marzo-camarones" class="section level2">
+<h2><strong>DIA 3 – Miércoles 29 de marzo: Camarones</strong></h2>
 <ul>
-<li>From plankton to policy: Connecting ocean observations to decision making - Abigail McQuatters-Gollop</li>
-<li>Numerical modelling of marine plankton ecosystems- Mechanistic models at the global ocean scale - Sergio Vallina <br> <br></li>
+<li>Manejo y análisis de datos</li>
+<li>Bases de datos abiertas para registros de biodiversidad <a
+href="obis.org">OBIS</a></li>
+<li>Análisis de fotografías digitales con inteligencia artificial <br>
+<br></li>
 </ul>
 </div>
-<div id="day-2---thursday-october-14-2021" class="section level2">
-<h2><strong>DAY 2 - Thursday October 14, 2021</strong></h2>
-<p>Chair: Alice Soccodato // Co-chair &amp; note taker: Maria Grigoratou</p>
+<div id="dia-4-jueves-30--de-marzo-camarones" class="section level2">
+<h2><strong>DIA 4 – Jueves 30- de marzo: Camarones</strong></h2>
 <ul>
-<li>Breakout session 1 – Databases: what we have and what we would like</li>
-<li>Breakout session 2 – The Value of Plankton Ecosystem Functions <br> <br></li>
+<li>Continuación de análisis de fotografías digitales con IA tomadas
+durante la capacitación</li>
+<li>Generación de reporte de indicadores de biodiversidad con <a
+href="https://marinebon.github.io/p2p-dashboard/biodivExplorer_beach.html#general-information">tableros
+interactivos</a> <br> <br></li>
 </ul>
 </div>
-<div id="day-1-wednesday-october-13-2021-america" class="section level2">
-<h2><strong>DAY 1 – Wednesday October 13, 2021 (America)</strong></h2>
-<p>Chair: Enrique Montes // Co-chair &amp; note taker: Maria Grigoratou</p>
+<div id="dia-5-viernes-31-de-marzo-camarones" class="section level2">
+<h2><strong>DIA 5 – Viernes 31 de marzo: Camarones</strong></h2>
 <ul>
-<li>Marine observation efforts in the SW Atlantic Ocean - Celeste López-Abbate</li>
-<li>Data and approaches for lower trophic level diversity on the Canadian northwest Atlantic shelves - Catherine Johnson</li>
-<li>Modeling diverse plankton communities – How is it done and what are we missing? - Esteban Acevedo-Trejos <br> <br></li>
+<li>Análisis grupal de los datos subidos, comparaciones con otros datos
+de Argentina</li>
+<li>Discusión acerca de aplicación de resultados al manejo de
+ecosistemas costeros e implementación en Parques Nacionales Marinos</li>
+<li>Coordinación de muestreos futuros en las distintas localidades</li>
+<li>Entrega formal de equipamiento para muestreo a largo plazo <br>
+<br></li>
 </ul>
-</div>
-<div id="day-2---thursday-october-14-2021-1" class="section level2">
-<h2><strong>DAY 2 - Thursday October 14, 2021</strong></h2>
-<p>Chair: Frank Muller- Karger // Co-chair &amp; note taker: Esteban Acevedo- Trejos</p>
-<ul>
-<li>Breakout session 1 – Databases: what we have and what we would like</li>
-<li>Breakout session 2 – The Value of Plankton Ecosystem Functions <br> <br></li>
-</ul>
-</div>
-<div id="day-1-wednesday-november-3-2021-plankton-in-policy-how-can-we-best-use-plankton-to-inform-ecosystem-assessments" class="section level2">
-<h2><strong>DAY 1 – Wednesday, November 3, 2021: Plankton in policy: How can we best use plankton to inform ecosystem assessments?</strong></h2>
-<ul>
-<li>Discussion of the value of plankton (ecological, biogeochemical, economic, recreational) <br> <br></li>
-<li>Plankton Essential Ocean Variables (EOVs) and ecosystem assessments - Anthony Richardson, Lavenia Ratnaraj and Ana Lara-Lopez</li>
-</ul>
-<p>- What are ecosystem assessments?</p>
-<p>- Plankton EOVs – biomass and diversity</p>
-<p>- Case studies that include plankton in ecosystem assessments</p>
-<p>- How might be we best use plankton as EOVs?</p>
-<p>- What are we using plankton indicators for?</p>
-<p>- What examples do we have of using plankton indicators from different parts of the world?</p>
-<p>- How can we move plankton EOVs forward? <br> <br></p>
-</div>
-<div id="day-2-thursday-november-4-2021-plankton-in-management-how-can-we-best-use-plankton-in-models" class="section level2">
-<h2><strong>DAY 2 – Thursday November 4, 2021: Plankton in management: How can we best use plankton in models?</strong></h2>
-<ul>
-<li>What are the main types of plankton data and their limitations? - Jason Everett</li>
-<li>Plankton in models - Heidi Pethybridge, Jenny Skerratt, Tyler Rohr</li>
-<li>Approaches to standardising plankton data for use in models - Anthony Richardson:</li>
-</ul>
-<p>Use of conversions; Use of statistical models</p>
-<ul>
-<li><p>Making plankton data more useful for modelling</p></li>
-<li><p>What examples do we have of using plankton data in models from different parts of the world?</p></li>
-<li><p>How can we improve conversion tables/equations?</p></li>
-<li><p>What are the different ways in which we can validate model output using plankton data?</p></li>
-<li><p>How can we stimulate plankton uptake in models?</p></li>
-</ul>
-<h2>
+</h2>
 </body>
-<p><br></p>
+<div id="htmlwidget-9f2b472df4e196de3fcd" style="width:672px;height:480px;" class="leaflet html-widget"></div>
+<script type="application/json" data-for="htmlwidget-9f2b472df4e196de3fcd">{"x":{"options":{"crs":{"crsClass":"L.CRS.EPSG3857","code":null,"proj4def":null,"projectedBounds":null,"options":{}},"attributionControl":false},"calls":[{"method":"addProviderTiles","args":["Esri.WorldImagery",null,null,{"errorTileUrl":"","noWrap":false,"detectRetina":false}]},{"method":"addAwesomeMarkers","args":[[-45.1261811,-43.2099,-44.7985],[-66.5372371,-65.2831,-65.7103],{"icon":["home","plane","home"],"markerColor":["green","red","orange"],"iconColor":"black","spin":false,"squareMarker":false,"iconRotate":0,"font":"monospace","prefix":"fa"},null,null,{"interactive":true,"draggable":false,"keyboard":true,"title":"","alt":"","zIndexOffset":0,"opacity":1,"riseOnHover":false,"riseOffset":250},null,null,null,null,["Bahía Bustamante","Trelew","Camarones"],{"interactive":false,"permanent":true,"direction":"auto","opacity":1,"offset":[0,0],"textsize":"10px","textOnly":false,"className":"","sticky":true},null]}],"limits":{"lat":[-45.1261811,-43.2099],"lng":[-66.5372371,-65.2831]},"setView":[[-44.3781937,-65.8435457],7,[]]},"evals":[],"jsHooks":[]}</script>
 </div>
 
 <div class="footer text-center">

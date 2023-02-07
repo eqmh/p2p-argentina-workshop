@@ -1,5 +1,5 @@
 ---
-title: "Workshop Participants"
+title: "Participantes del Taller"
 ---
 
 ```{r setup, include=FALSE}
@@ -9,30 +9,31 @@ library(readxl)
 library(knitr)
 ```
 
-## List of Participants (Alphabetically) – November 2020 (Europe, USA)
+<img src="images/muestreo.PNG" width="500px"/>
 
-```{r}
-read_excel("docs/participants_Nov2020.xlsx") %>%
-  kable()
-```
+<body>
 
-## List of Participants (Alphabetically) – October 2021 (America)
+<h2>
 
-```{r}
-read_excel("docs/participants_Oct2021.xlsx") %>%
-  kable()
-```
+# El taller contará con la participación de 26 Guardaparques de los siguentes Parques Nacionales:
 
-## List of Participants (Alphabetically) – October 2021 (Africa, Europe, Middle East, India)
+- [Campos del Tuyú](https://www.argentina.gob.ar/parquesnacionales/camposdeltuyu)
+- [Islote Lobos](https://www.argentina.gob.ar/parquesnacionales/regionpatagonia/parque-nacional-islote-lobos)
+- [Monte León](https://www.argentina.gob.ar/parquesnacionales/monteleon)
+- [Tierra del Fuego](https://www.argentina.gob.ar/parquesnacionales/tierradelfuego)
+- [Parques Interjurisdiccionales Marino Costero Patagonia Austral](https://www.argentina.gob.ar/parquesnacionales/marinocostero): 
+  + [Isla Pingüino](https://www.argentina.gob.ar/parquesnacionales/islapinguino)
+  + [Makenke](https://www.argentina.gob.ar/parquesnacionales/makenke)
+- [Reserva Natural Silvestre Isla de los Estados y Archipiélago de Año Nuevo](https://www.argentina.gob.ar/parquesnacionales/isladelosestados) 
+- [Reservas Naturales de la Defensa](https://www.argentina.gob.ar/parquesnacionales/reservas-naturales-defensa): 
+  + [Punta Buenos Aires](https://www.argentina.gob.ar/parquesnacionales/puntabuenosaires)
+  + [Faro San Antonio](https://web.archive.org/web/20120228014505/http://www.hidro.gov.ar/historia/FSanAntonio.ASP)
+  + [Campo Mar Chiquita-Dragones de Malvinas](https://www.argentina.gob.ar/parquesnacionales/campomarchiquita)
+  + [Baterías-Charles Darwin](https://www.argentina.gob.ar/parquesnacionales/charlesdarwin)
 
-```{r}
-read_excel("docs/participants_Oct2021-2.xlsx") %>%
-  kable()
-```
+</h2>
 
-## List of Participants (Alphabetically) – November 2021 (East Asia, Oceania)
+</body>
 
-```{r}
-read_excel("docs/participants_Nov2021.xlsx") %>%
-  kable()
-```
+
+
