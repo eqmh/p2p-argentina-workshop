@@ -13,7 +13,7 @@
 
 <title>Instructores</title>
 
-<script src="site_libs/header-attrs-2.14/header-attrs.js"></script>
+<script src="site_libs/header-attrs-2.18/header-attrs.js"></script>
 <script src="site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <link href="site_libs/bootstrap-3.3.5/css/cosmo.min.css" rel="stylesheet" />
@@ -143,11 +143,15 @@ $(document).ready(function () {
     href = "index.html";
   var menuAnchor = $('a[href="' + href + '"]');
 
-  // mark it active
-  menuAnchor.tab('show');
-
-  // if it's got a parent navbar menu mark it active as well
-  menuAnchor.closest('li.dropdown').addClass('active');
+  // mark the anchor link active (and if it's in a dropdown, also mark that active)
+  var dropdown = menuAnchor.closest('li.dropdown');
+  if (window.bootstrap) { // Bootstrap 4+
+    menuAnchor.addClass('active');
+    dropdown.find('> .dropdown-toggle').addClass('active');
+  } else { // Bootstrap 3
+    menuAnchor.parent().addClass('active');
+    dropdown.addClass('active');
+  }
 
   // Navbar adjustments
   var navHeight = $(".navbar").first().height() + 15;
@@ -176,8 +180,8 @@ $(document).ready(function () {
   border-radius: 4px;
 }
 
-.tabset-dropdown > .nav-tabs > li.active:before {
-  content: "";
+.tabset-dropdown > .nav-tabs > li.active:before, .tabset-dropdown > .nav-tabs.nav-tabs-open:before {
+  content: "\e259";
   font-family: 'Glyphicons Halflings';
   display: inline-block;
   padding: 10px;
@@ -185,16 +189,9 @@ $(document).ready(function () {
 }
 
 .tabset-dropdown > .nav-tabs.nav-tabs-open > li.active:before {
-  content: "&#xe258;";
-  border: none;
-}
-
-.tabset-dropdown > .nav-tabs.nav-tabs-open:before {
-  content: "";
+  content: "\e258";
   font-family: 'Glyphicons Halflings';
-  display: inline-block;
-  padding: 10px;
-  border-right: 1px solid #ddd;
+  border: none;
 }
 
 .tabset-dropdown > .nav-tabs > li.active {
@@ -363,6 +360,29 @@ evaluar los patrones de biodiversidad marina, los impactos humanos en
 los ecosistemas marinos, y áreas prioritarias de conservación
 marina.</p>
 <p></br></p>
+<p><img src="images/FLima.jpeg" width="500px"/></p>
+<p><strong>Fernando P. Lima</strong> es científico marino y jefe de
+grupo en <a href="https://cibio.up.pt/en/">CIBIO/InBIO</a>, U. Porto,
+Portugal. Es profesor asistente invitado en <a
+href="https://sigarra.up.pt/icbas/en/web_page.inicial">ICBAS</a>, U.
+Porto, y cofundador de <a href="https://electricblue.eu/">ElectricBlue
+CRL</a>, una start-up tecnológica que desarrolla instrumentos para el
+monitoreo medioambiental y el bio-logging. Cuenta con una amplia
+formación como biólogo marino estudiando las consecuencias del cambio
+climático en la biodiversidad y la biogeografía, desde escalas locales a
+continentales. Su investigación integra diversas disciplinas, como la
+climatología, la biogeografía, la electrónica, la ecología experimental,
+la fisiología y la modelización, hace un uso intensivo de datos e
+intenta integrar procesos y mecanismos que operan desde las escalas más
+finas a las más amplias. Actualmente realiza estudios de campo en las
+costas atlánticas de Europa, África, América y las islas del Atlántico
+medio. Ha trabajado en la reconstrucción y el análisis climáticos,
+demostrando que la temperatura desempeña un papel significativo en la
+configuración de las comunidades costeras modernas e históricas.
+Fernando es Investigador Principal de la iniciativa <a
+href="https://cibio.up.pt/en/projects/cctbon-atlantic-ocean-coupled-coastal-temperature-and-biodiversity-observation-network-div-id-gtx-trans-style-position-absolute-left-3px-top-20px-div/">CCTBON</a>,
+una red de colaboración a largo plazo para la observación de la
+temperatura y la biodiversidad en todo el Atlántico.</p>
 </h3>
 </body>
 

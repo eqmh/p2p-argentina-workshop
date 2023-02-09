@@ -32,6 +32,10 @@ knitr::opts_chunk$set(echo = F, message = F, warning = F)
 
 </br>
 
+<img src="images/FLima.JPEG" width="500px"/>
+
+**Fernando P. Lima** es científico marino y jefe de grupo en [CIBIO/InBIO](https://cibio.up.pt/en/), U. Porto, Portugal. Es profesor asistente invitado en [ICBAS](https://sigarra.up.pt/icbas/en/web_page.inicial), U. Porto, y cofundador de [ElectricBlue CRL](https://electricblue.eu/), una start-up tecnológica que desarrolla instrumentos para el monitoreo medioambiental y el bio-logging. Cuenta con una amplia formación como biólogo marino estudiando las consecuencias del cambio climático en la biodiversidad y la biogeografía, desde escalas locales a continentales. Su investigación integra diversas disciplinas, como la climatología, la biogeografía, la electrónica, la ecología experimental, la fisiología y la modelización, hace un uso intensivo de datos e intenta integrar procesos y mecanismos que operan desde las escalas más finas a las más amplias. Actualmente realiza estudios de campo en las costas atlánticas de Europa, África, América y las islas del Atlántico medio. Ha trabajado en la reconstrucción y el análisis climáticos, demostrando que la temperatura desempeña un papel significativo en la configuración de las comunidades costeras modernas e históricas. Fernando es Investigador Principal de la iniciativa [CCTBON](https://cibio.up.pt/en/projects/cctbon-atlantic-ocean-coupled-coastal-temperature-and-biodiversity-observation-network-div-id-gtx-trans-style-position-absolute-left-3px-top-20px-div/), una red de colaboración a largo plazo para la observación de la temperatura y la biodiversidad en todo el Atlántico. 
+
 </h3>
 
 </body>
