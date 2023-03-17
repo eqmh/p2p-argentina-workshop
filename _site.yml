@@ -18,9 +18,9 @@ navbar:
     - text: "Materiales"
       icon: ion-hammer
       href: reports.html
-      # menu:
-      #   - text: "1st Workshop"
-      #     href: workshop-1.html
+      menu:
+        - text: "Tablero"
+          href: PIMCPA_results.html
       #   - text: "2nd Workshop"
       #     href: workshop-2.html
 output_dir: "docs"

@@ -13,7 +13,7 @@
 
 <title>Materiales del Taller</title>
 
-<script src="site_libs/header-attrs-2.14/header-attrs.js"></script>
+<script src="site_libs/header-attrs-2.18/header-attrs.js"></script>
 <script src="site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <link href="site_libs/bootstrap-3.3.5/css/cosmo.min.css" rel="stylesheet" />
@@ -143,11 +143,15 @@ $(document).ready(function () {
     href = "index.html";
   var menuAnchor = $('a[href="' + href + '"]');
 
-  // mark it active
-  menuAnchor.tab('show');
-
-  // if it's got a parent navbar menu mark it active as well
-  menuAnchor.closest('li.dropdown').addClass('active');
+  // mark the anchor link active (and if it's in a dropdown, also mark that active)
+  var dropdown = menuAnchor.closest('li.dropdown');
+  if (window.bootstrap) { // Bootstrap 4+
+    menuAnchor.addClass('active');
+    dropdown.find('> .dropdown-toggle').addClass('active');
+  } else { // Bootstrap 3
+    menuAnchor.parent().addClass('active');
+    dropdown.addClass('active');
+  }
 
   // Navbar adjustments
   var navHeight = $(".navbar").first().height() + 15;
@@ -176,8 +180,8 @@ $(document).ready(function () {
   border-radius: 4px;
 }
 
-.tabset-dropdown > .nav-tabs > li.active:before {
-  content: "";
+.tabset-dropdown > .nav-tabs > li.active:before, .tabset-dropdown > .nav-tabs.nav-tabs-open:before {
+  content: "\e259";
   font-family: 'Glyphicons Halflings';
   display: inline-block;
   padding: 10px;
@@ -185,16 +189,9 @@ $(document).ready(function () {
 }
 
 .tabset-dropdown > .nav-tabs.nav-tabs-open > li.active:before {
-  content: "&#xe258;";
-  border: none;
-}
-
-.tabset-dropdown > .nav-tabs.nav-tabs-open:before {
-  content: "";
+  content: "\e258";
   font-family: 'Glyphicons Halflings';
-  display: inline-block;
-  padding: 10px;
-  border-right: 1px solid #ddd;
+  border: none;
 }
 
 .tabset-dropdown > .nav-tabs > li.active {
@@ -275,12 +272,19 @@ $(document).ready(function () {
     Programa
   </a>
 </li>
-<li>
-  <a href="reports.html">
+<li class="dropdown">
+  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
     <span class="ion ion-hammer"></span>
      
     Materiales
+     
+    <span class="caret"></span>
   </a>
+  <ul class="dropdown-menu" role="menu">
+    <li>
+      <a href="PIMCPA_results.html">Tablero</a>
+    </li>
+  </ul>
 </li>
       </ul>
       <ul class="nav navbar-nav navbar-right">
@@ -301,9 +305,35 @@ $(document).ready(function () {
 
 <body>
 <h1>
-<p><strong>En construcción</strong></p>
+<p><strong>Durante el taller los participantes aprenderán a producir
+tableros de indicadores para reportar el estatus de las comunidades
+bentónicas muestreadas. Estos son algunos ejemplos de los componentes de
+los tableros:</strong></p>
+<div id="mapeo-de-los-muestreos-de-campo" class="section level2">
+<h2>Mapeo de los muestreos de campo</h2>
+<iframe src="images/interactive_map.html" width="1000px" height="1000px"></iframe>
+</div>
+<div id="visualización-de-datos-de-cobertura-bentónica"
+class="section level2">
+<h2>Visualización de datos de cobertura bentónica</h2>
+<iframe src="images/boxplot.html" width="1000px" height="500px"></iframe>
+<p><img src="images/DSCN8673.JPG" width="400px"/></p>
+<iframe src="images/mollusks_indicator.html" width="600px" height="800px"></iframe>
+<p><img src="images/casa_de_gas3.jpeg" width="400px"/></p>
+<iframe src="images/barnacles.html" width="600px" height="800px"></iframe>
+</div>
+<div id="series-de-tiempo-de-temperatura-superficial-del-mar"
+class="section level2">
+<h2>Series de tiempo de temperatura superficial del mar</h2>
+<iframe src="images/sst_time-series.html" width="1000px" height="500px"></iframe>
+</div>
+<div id="anomalías-de-temperatura-superficial-del-mar"
+class="section level2">
+<h2>Anomalías de temperatura superficial del mar</h2>
+<iframe src="images/sst_clim.html" width="1000px" height="500px"></iframe>
 </h1>
 </body>
+</div>
 
 <div class="footer text-center">
   © 2021 <img width="100px" src="images/mbon.jpg"/>
