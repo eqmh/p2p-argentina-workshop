@@ -32,8 +32,7 @@ knitr::opts_chunk$set(echo = F, message = F, warning = F, fig.width=9.5, fig.hei
 
 <h3>
 
-Este taller busca capacitar Guardafaunas y Guardaparques de Áreas Naturales/Parques
-Nacionales Marinos de la costa Argentina y personal científico para el
+Este taller busca capacitar Guardafaunas y Guardaparques de [Parques Nacionales](https://www.argentina.gob.ar/parquesnacionales) y [Áreas Naturales Protegidas](https://chubutpatagonia.gob.ar/areas-naturales-protegidas/) de la costa Argentina y personal científico para el
 monitoreo de la biodiversidad en litorales rocosos de la Patagonia
 usando imágenes (foto-cuadrantes) procesadas con Inteligencia Artificial
 para clasificación de especies bentónicas. </br> <br> Esta actividad
