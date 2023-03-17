@@ -19,10 +19,10 @@ navbar:
       icon: ion-hammer
       href: reports.html
       menu:
-        - text: "Tablero"
+        - text: "Indicadores Medioambientales"
+          href: reports.html
+        - text: "Tablero de Indicadores"
           href: PIMCPA_results.html
-      #   - text: "2nd Workshop"
-      #     href: workshop-2.html
 output_dir: "docs"
 output:
   html_document:
