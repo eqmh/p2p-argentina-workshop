@@ -18,11 +18,11 @@ navbar:
     - text: "Materiales"
       icon: ion-hammer
       href: reports.html
-      menu:
-        - text: "Indicadores Medioambientales"
-          href: reports.html
-        - text: "Tablero de Indicadores"
-          href: PIMCPA_results.html
+      # menu:
+        # - text: "Indicadores Medioambientales"
+        #   href: reports.html
+        # - text: "Tablero de Indicadores"
+        #   href: PIMCPA_results.html
 output_dir: "docs"
 output:
   html_document:
