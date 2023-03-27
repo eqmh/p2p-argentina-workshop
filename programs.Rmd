@@ -46,7 +46,9 @@ knitr::opts_chunk$set(echo = F, message = F, warning = F)
 -   Coordinación de muestreos futuros en las distintas localidades
 -   Entrega formal de equipamiento para muestreo a largo plazo <br> <br>
 
-
+## [**Agenda detallada**](cronograma_actividades_marzo_2023_final.pdf)
+<br>
+<br>
 ```{r}
 library(tidyverse)
 library(leaflet)
@@ -54,13 +56,8 @@ library(sf)
 
 pts <- tribble(
         ~lon,       ~lat,       ~name,    ~icon,   ~color,          ~description, ~comment,
-  -65.2831, -43.2099,      "Aeropuerto Trelew", "plane", "red", "Trelew", NA,
-  -65.828527, -45.037701,  "Campo Rewilding", "home", "orange", "Camarones 1", NA,
-  -65.648284, -44.888136,  "Playa Algueros", "home", "orange", "Camarones 2", NA,
-  -65.702042, -44.801439,  "Rocas Coloradas", "home", "orange", "Camarones 2", NA,
-  -66.522927, -45.208396,  "Casa de Gas", "home", "yellow", "Bustamante 1", NA,
-  -66.535555, -45.222045,  "Playa Burbujas", "home", "yellow", "Bustamante 2", NA,
-  -66.551519, -45.217113,  "Playa Litoral", "home", "yellow", "Bustamante 3", NA) %>%
+  -65.702042, -44.801439,  "Rocas Coloradas", "home", "red", "Rocas Coloradas", NA,
+  -65.5555, -44.910077,  "PIMCPA", "home", "red", "PIMCPA", NA) %>%
   st_as_sf(coords = c("lon", "lat"), crs = 4326)
 ctr <- pts$geometry %>% st_geometrycollection() %>% st_centroid() %>% st_coordinates()
 icons <- awesomeIcons(
@@ -76,7 +73,7 @@ leaflet(pts, options = leafletOptions(attributionControl=F), height=600, width=1
 ```
  <br> <br>
 
-## **Los muestreos de campo se llevarán a cabo en estas localidades**
+## **Algunas localidades a monitotear post taller**
 
 <img src="images/casadegas.JPG" width="4000px"/> <br>
 
