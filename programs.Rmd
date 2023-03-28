@@ -57,7 +57,7 @@ library(sf)
 pts <- tribble(
         ~lon,       ~lat,       ~name,    ~icon,   ~color,          ~description, ~comment,
   -65.702042, -44.801439,  "Rocas Coloradas", "home", "red", "Rocas Coloradas", NA,
-  -65.5555, -44.910077,  "PIMCPA", "home", "red", "PIMCPA", NA) %>%
+  -65.5555, -44.910077,  "PIMCPA: Cabo dos Bahías", "home", "red", "PIMCPA", NA) %>%
   st_as_sf(coords = c("lon", "lat"), crs = 4326)
 ctr <- pts$geometry %>% st_geometrycollection() %>% st_centroid() %>% st_coordinates()
 icons <- awesomeIcons(
